@@ -40,6 +40,8 @@ data:
 {{ User.REQUIRED_FIELDS }} ```
 
 
+
+
 2. ```/auth/login/``` 
 
 Data Type : application/json
