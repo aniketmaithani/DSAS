@@ -27,20 +27,3 @@ class StudentInfoViewSet(mixins.CreateModelMixin, mixins.UpdateModelMixin, views
         """
         user = self.request.user
         return StudentInfo.objects.filter(id=user.id)
-
-class ActivationView(ActionViewMixin, generics.GenericAPIView):
-    """
-    Use this endpoint to activate user account.
-    """
-    serializer_class = UidAndTokenSerializer
-    permission_classes = (
-        permissions.AllowAny,
-    )
-    token_generator = default_token_generator
-
-    def action(self, serializer):
-        serializer.user.is_active = True
-        serializer.user.save()
-        signals.user_activated.send(
-            sender=self.__class__, user=serializer.user, request=self.request)
-        return Response(status=status.HTTP_200_OK)
