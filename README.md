@@ -83,7 +83,7 @@ status: HTTP_200_OK (success)
 
 
 
-4. ```/studentinfo``` (requires Authorization)
+4. ```/studentinfo/``` (requires Authorization)
 
 Authorization Type : Token Authorization | 
 
@@ -114,3 +114,14 @@ Call Type : POST
 
     
 ``` GET CALL to /studentinfo also supported provided you have Token Key ``` 
+
+
+5. ```/logout/``` 
+
+Call Type : POST
+
+```Use this endpoint to logout user (remove user authentication token).```
+
+```response
+
+status: HTTP_200_OK (success) ``` 
