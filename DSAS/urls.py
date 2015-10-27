@@ -16,11 +16,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework import routers
-from DSAS.userauth import views
 from DSAS.studentinfo.api import StudentInfoViewSet
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
 router.register(r'studentinfo', StudentInfoViewSet, base_name="studentinfo")
 
 
