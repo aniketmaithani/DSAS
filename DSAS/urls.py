@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from rest_framework import routers
-from DSAS.studentinfo.api import StudentInfoViewSet
+from DSAS.studentinfo.api import StudentInfoViewSet, ActivationView
 
 router = routers.DefaultRouter()
 router.register(r'studentinfo', StudentInfoViewSet, base_name="studentinfo")
+router.register(r'activate', ActivationView, base_name="activate")
 
 
 urlpatterns = [
