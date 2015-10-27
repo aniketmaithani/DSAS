@@ -59,7 +59,9 @@ status: HTTP_200_OK (success)
 
 data:
 
-auth_token     ```
+auth_token ```
+
+
 
 
 3. ```/auth/activate/```
@@ -78,6 +80,8 @@ response
 
 status: HTTP_200_OK (success)
 ```
+
+
 
 4. ```/studentinfo``` (requires Authorization)
 
@@ -106,5 +110,7 @@ Call Type : POST
     "passout_year": "2015",
     "aggregate_percentage": 76 (Integer Type Only)
 }```
+
+
 
 ``` GET CALL to /studentinfo also supported provided you have Token Key ``` 
