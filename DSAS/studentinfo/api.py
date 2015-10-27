@@ -12,7 +12,7 @@ from .serializers import StudentInfoSerializer
 class StudentInfoViewSet(mixins.CreateModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet, mixins.ListModelMixin):
 
     """
-    API endpoint that allows visitors to be created and patched.
+    API endpoint that allows student info to be created and patched.
     """
     serializer_class = StudentInfoSerializer
 
