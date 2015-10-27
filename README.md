@@ -5,9 +5,9 @@
 # Modules Used 
 
  The following modules/frameworks are used 
-```- Django 1.8.x [Version is updated as per new release]```
-```- Django Rest Framework [Version is updated as per new release]```
-```- Djoser ```
+```## Django 1.8.x [Version is updated as per new release]```
+```## Django Rest Framework [Version is updated as per new release]```
+```## Djoser ```
 
 # API Endpoints 
 
@@ -112,5 +112,5 @@ Call Type : POST
 }```
 
 
-
+    
 ``` GET CALL to /studentinfo also supported provided you have Token Key ``` 
